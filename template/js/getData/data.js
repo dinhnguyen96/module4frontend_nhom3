@@ -61,12 +61,33 @@ function getAllData()
             }
         }
     });
+    let thirdRequest = $.ajax({
+
+        type: "GET",
+        //tên API
+        url: "http://localhost:8080/homes/companies",
+        success: function (data) {
+            let content = "";
+            if (data !== undefined) {
+                for (let i = 0; i < data.length;i++)
+                {
+                   content += getCompanies(data[i]);
+                }
+            }
+            document.getElementById("companyInfo").innerHTML = content;
+        }
+    });
     requests.push(firstRequest);
     requests.push(secondRequest);
+    requests.push(thirdRequest);
     $.when.apply($, requests).done(function()
     {
         console.log('All requests complete');
     }).fail(function() {
         console.log('At least one request failed');
     });
+}
+function getCompanies(data)
+{
+    return `<li><img src='/template/images/company/${data.avatar}'> <br>${data.name}<br></li>`;
 }
