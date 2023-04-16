@@ -26,7 +26,7 @@
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body onload="getAllData()">
 
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	<div class="container-fluid px-md-4	">
@@ -68,7 +68,7 @@
 											<span class="flaticon-worldwide"></span>
 										</div>
 										<div class="desc text-left">
-											<strong class="number" data-number="46">0</strong>
+											<strong class="number" id="locationNumber" data-number="0"></strong>
 											<span>Địa Điểm</span>
 										</div>
 									</div>
@@ -81,7 +81,7 @@
 											<span class="flaticon-visitor"></span>
 										</div>
 										<div class="desc text-left">
-											<strong class="number" data-number="450">0</strong>
+											<strong class="number" id="companyNumber" data-number="0"></strong>
 											<span>Danh Sách Công Ty</span>
 										</div>
 									</div>
@@ -655,6 +655,8 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 <script src="js/google-map.js"></script>
 <script src="js/main.js"></script>
+<script src="js/getData/data.js"></script>
+
 
 </body>
 </html>
