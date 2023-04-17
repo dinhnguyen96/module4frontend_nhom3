@@ -25,7 +25,6 @@
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 
 </head>
 <body onload="getAllData()">
@@ -112,7 +111,7 @@
 													<div class="form-group">
 														<div class="form-field">
 															<div class="icon"><span class="icon-briefcase"></span></div>
-															<input type="text" class="form-control" placeholder="Trình độ công việc">
+															<input type="text" class="form-control" id="qualifcationNameByJob" placeholder="Trình độ công việc">
 														</div>
 													</div>
 												</div>
@@ -132,14 +131,15 @@
 													<div class="form-group">
 														<div class="form-field">
 															<div class="icon"><span class="icon-map-marker"></span></div>
-															<input type="text" id="searchLocation" class="form-control" placeholder="Địa Điểm">
+															<input type="text" id="locationByJob" class="form-control" placeholder="Địa Điểm">
+
 														</div>
 													</div>
 												</div>
 												<div class="col-md">
 													<div class="form-group">
 														<div class="form-field">
-															<button type="submit" class="form-control btn btn-primary">Tìm Kiếm</button>
+															<button type="button" onclick="searchJob()" class="form-control btn btn-primary">Tìm Kiếm</button>
 														</div>
 													</div>
 												</div>
@@ -584,8 +584,8 @@
 <!-- loader -->
 <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
-
 <script src="js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 <script src="js/jquery-migrate-3.0.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

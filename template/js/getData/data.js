@@ -105,6 +105,29 @@ function getAllData()
         console.log('At least one request failed');
     });
 }
+function searchJob()
+{
+    let qualificationName = $('#qualifcationNameByJob').val();
+    let programmingLanguageJobId = $('#programmingLanguageJobId').val();
+    let locationJob = $('#locationByJob').val();
+
+    // goi ajax
+    $.ajax({
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        type: "POST",
+        data: JSON.stringify(searchJob),
+        //tên API
+        url: `http://localhost:8080/homes/jobs/searchingJob?searchLocationByJob=${locationJob}&programmingLanguageJob=${programmingLanguageJobId}&qualificationName=${qualificationName}`,
+        //xử lý khi thành công
+        success: getAllData
+
+    });
+    //chặn sự kiện mặc định của thẻ
+    event.preventDefault();
+}
 function getProgrammingLanguage(data)
 {
     return `<option value="${data.id}">${data.name}</option>`;
@@ -113,21 +136,5 @@ function getCompanies(data)
 {
     return `<li><img src='/template/images/company/${data.avatar}' > <br>${data.name}<br></li>`;
 }
-$(document).ready(function() {
-    // Khởi tạo autocomplete cho input search
-    $("#searchLocation").autocomplete({
-        source: function(request, response) {
-            $.ajax({
-                url: "http://localhost:8080/homes/cities",
-                dataType: "json",
-                data: {
-                    term: request.term
-                },
-                success: function(data) {
-                    response(data);
-                }
-            });
-        },
-        minLength: 1 // Số ký tự tối thiểu để kích hoạt autocomplete
-    });
-});
+
+
