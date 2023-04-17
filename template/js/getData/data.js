@@ -71,15 +71,33 @@ function getAllData()
             if (data !== undefined) {
                 for (let i = 0; i < data.length;i++)
                 {
-                   content += getCompanies(data[i]);
+                    content += getCompanies(data[i]);
                 }
             }
             document.getElementById("companyInfo").innerHTML = content;
         }
     });
+    let fourthRequest = $.ajax({
+
+        type: "GET",
+        //tên API
+        url: "http://localhost:8080/homes/programmingLanguage",
+        success: function (data) {
+            let content = "";
+            if (data !== undefined) {
+                for (let i = 0; i < data.length;i++)
+                {
+                    content += getProgrammingLanguage(data[i])
+                }
+            }
+            document.getElementById("programmingLanguageJob").innerHTML = content;
+            document.getElementById("programmingLanguageCandidate").innerHTML = content;
+        }
+    });
     requests.push(firstRequest);
     requests.push(secondRequest);
     requests.push(thirdRequest);
+    requests.push(fourthRequest);
     $.when.apply($, requests).done(function()
     {
         console.log('All requests complete');
@@ -87,7 +105,29 @@ function getAllData()
         console.log('At least one request failed');
     });
 }
+function getProgrammingLanguage(data)
+{
+    return `<option value="${data.id}">${data.name}</option>`;
+}
 function getCompanies(data)
 {
-    return `<li><img src='/template/images/company/${data.avatar}'> <br>${data.name}<br></li>`;
+    return `<li><img src='/template/images/company/${data.avatar}' > <br>${data.name}<br></li>`;
 }
+$(document).ready(function() {
+    // Khởi tạo autocomplete cho input search
+    $("#searchLocation").autocomplete({
+        source: function(request, response) {
+            $.ajax({
+                url: "http://localhost:8080/homes/cities",
+                dataType: "json",
+                data: {
+                    term: request.term
+                },
+                success: function(data) {
+                    response(data);
+                }
+            });
+        },
+        minLength: 1 // Số ký tự tối thiểu để kích hoạt autocomplete
+    });
+});
