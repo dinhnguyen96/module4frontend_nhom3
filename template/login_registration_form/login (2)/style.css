@@ -190,7 +190,7 @@ html, body{
 .panel-login {
 	position: relative;
 	z-index: 1;
-	border: 1px solid #1a2170;
+	border: 1px solid #755c9e;
 	-webkit-box-shadow: 0px 2px 3px 0px rgba(255,255,255,0.2);
 	-moz-box-shadow: 0px 2px 3px 0px rgba(255,255,255,0.2);
 	box-shadow: 0px 2px 3px 0px rgba(255,255,255,0.2);
@@ -202,9 +202,9 @@ html, body{
     border-top-right-radius: 3px;
 }
 .panel-login>.panel-heading {
-	color: #345eb9;
+	color: #00415d;
 	background: rgba(255,255,255,0.5);
-	border-color: #3755d0;
+	border-color: #755c9e;
 	text-align:center;
 	position: relative;
 	border-radius: 0;
@@ -215,7 +215,7 @@ html, body{
 	color: #ffffff;
 	font-weight: bold;
 	font-size: 15px;
-	background: #2f3b88;
+	background: #755c9e;
 	padding: 10px 16px;
 	border-radius: 50px;
 	display: block;
@@ -235,7 +235,7 @@ html, body{
 }
 .panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"] {
 	padding: 16px 20px 16px 50px;
-	border: 1px solid #3d83dc;
+	border: 1px solid #755c9e;
 	font-size: 16px;
 	border-radius: 50px;
 	-webkit-transition: all 0.1s linear;
@@ -248,15 +248,15 @@ html, body{
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
-	border-color: #4e6ba9;
+	border-color: #755c9e;
 }
 
 .panel-login .form-group.addcolor .icon-lp{
-	color: #4d77c4;
+	color: #755c9e;
 }
 
 .btn-login {
-	background-color: #5e6fe0;
+	background-color: #755c9e;
 	outline: none;
 	color: #fff;
 	font-size: 14px;
@@ -264,7 +264,7 @@ html, body{
 	font-weight: normal;
 	padding: 14px 0;
 	text-transform: uppercase;
-	border-color: #6759d7;
+	border-color: #755c9e;
 	border-radius: 50px;
 }
 .btn-login:hover,
@@ -284,7 +284,7 @@ html, body{
 }
 
 .btn-register {
-	background-color: #4179c0;
+	background-color: #755c9e;
 	outline: none;
 	color: #fff;
 	font-size: 14px;
@@ -292,7 +292,7 @@ html, body{
 	font-weight: normal;
 	padding: 14px 0;
 	text-transform: uppercase;
-	border-color: #4054b2;
+	border-color: #755c9e;
 	border-radius: 50px;
 }
 .btn-register:hover,
@@ -378,7 +378,7 @@ form .form-group .icon-lp{
 	padding-right: 10px;
 }
 .panel-login .panel-body form ul li .tw:hover{
-	background: #4878bd;
+	background: #755c9e;
 }
 
 .che-box{
@@ -409,7 +409,7 @@ form .form-group .icon-lp{
 	border-width: 1px;
 	border-style: solid;
 	background: none;
-	border-color: #4558be;
+	border-color: #755c9e;
 	transition: border-color 0.3s;
 	-o-transition: border-color 0.3s;
 	-ms-transition: border-color 0.3s;
@@ -434,7 +434,7 @@ form .form-group .icon-lp{
 	height: 18px;
 	font: normal 12px/16px FontAwesome;
 	text-align: center;
-	color: #3777cb;
+	color: #755c9e;
 }
 
 .che-box .checkbox-in input:checked + span::after {
@@ -442,7 +442,7 @@ form .form-group .icon-lp{
 }
 
 .checkbox-in a{
-	color: #3573d0;
+	color: #755c9e;
 }
 
 .footer-company-name{
@@ -455,7 +455,7 @@ form .form-group .icon-lp{
 }
 
 .footer-company-name a{
-	color: #365ace;
+	color: #755c9e;
 }
 .footer-company-name a:hover{
 	color: #ffffff;
