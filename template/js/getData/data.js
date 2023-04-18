@@ -65,22 +65,6 @@ function getAllData()
 
         type: "GET",
         //tên API
-        url: "http://localhost:8080/homes/companies",
-        success: function (data) {
-            let content = "";
-            if (data !== undefined) {
-                for (let i = 0; i < data.length;i++)
-                {
-                    content += getCompanies(data[i]);
-                }
-            }
-            document.getElementById("companyInfo").innerHTML = content;
-        }
-    });
-    let fourthRequest = $.ajax({
-
-        type: "GET",
-        //tên API
         url: "http://localhost:8080/homes/programmingLanguage",
         success: function (data) {
             let content = "";
@@ -94,10 +78,10 @@ function getAllData()
             document.getElementById("programmingLanguageCandidate").innerHTML = content;
         }
     });
+    getAllListCompanyPage(0);
     requests.push(firstRequest);
     requests.push(secondRequest);
     requests.push(thirdRequest);
-    requests.push(fourthRequest);
     $.when.apply($, requests).done(function()
     {
         console.log('All requests complete');
@@ -238,6 +222,38 @@ function getCompanies(data)
     return `<li><img src='/template/images/company/${data.avatar}' width="150" height="150" > <br>${data.name}<br></li>`;
 }
 
+function getAllListCompanyPage(page)
+{
+    $.ajax({
+        type: "GET",
+        url: `http://localhost:8080/homes/companies?page=${page}`,
+        success: function (data) {
+            displayCompany(data.content)
+            displayPageCompany(data)
+            //điều kiện bỏ nút previous
+            if (data.pageable.pageNumber === 0) {
+                document.getElementById("backup").hidden = true
+            }
+            //điều kiện bỏ nút next
+            if (data.pageable.pageNumber + 1 === data.totalPages) {
+                document.getElementById("next").hidden = true
+            }
+        }
+    });
+}
+function displayCompany(data)
+{
+    let content = "";
+    if (data !== undefined) {
+        for (let i = 0; i < data.length;i++)
+        {
+            content += getCompanies(data[i]);
+        }
+    }
+    document.getElementById("companyInfo").innerHTML = content;
+}
+
+
 function getAllListJobPage(page)
 {
     let qualificationName = localStorage.getItem("qualificationName");
@@ -260,6 +276,7 @@ function getAllListJobPage(page)
         }
     });
 }
+
 function displayJob(data)
 {
     let content = ``;
@@ -289,7 +306,6 @@ function isPrevious(pageNumber) {
     {
         getAllListJobPage(pageNumber-1);
     }
-
 }
 
 //hàm tiến page
@@ -297,3 +313,22 @@ function isNext(pageNumber) {
     getAllListJobPage(pageNumber+1);
 }
 
+function displayPageCompany(data){
+    let content = `<button class="btn btn-primary" id="backup" onclick="isPreviousCompanies(${data.pageable.pageNumber})">Previous</button>
+    <span>${data.pageable.pageNumber+1} | ${data.totalPages}</span>
+    <button class="btn btn-primary" id="next" onclick="isNextCompanies(${data.pageable.pageNumber})">Next</button>`
+    document.getElementById('pageCompany').innerHTML = content;
+}
+function isPreviousCompanies(pageNumber)
+{
+    if (pageNumber > 0)
+    {
+        getAllListCompanyPage(pageNumber-1);
+    }
+}
+
+//hàm tiến page
+function isNextCompanies(pageNumber)
+{
+    getAllListCompanyPage(pageNumber+1);
+}
