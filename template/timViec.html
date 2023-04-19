@@ -27,7 +27,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </head>
-<body>
+<body onload="getAllDataSearch()">
 
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	<div class="container-fluid px-md-4	">
@@ -69,7 +69,7 @@
 											<span class="flaticon-worldwide"></span>
 										</div>
 										<div class="desc text-left">
-											<strong class="number" data-number="46">0</strong>
+											<strong class="number" data-number="0" id="locationNumber"></strong>
 											<span>Địa Điểm</span>
 										</div>
 									</div>
@@ -82,21 +82,8 @@
 											<span class="flaticon-visitor"></span>
 										</div>
 										<div class="desc text-left">
-											<strong class="number" data-number="450">0</strong>
+											<strong class="number"  id="companyNumber" data-number="0"></strong>
 											<span>Danh Sách Công Ty</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 d-flex justify-content-center counter-wrap ftco-animate">
-								<div class="block-18 text-center">
-									<div class="text d-flex">
-										<div class="icon mr-2">
-											<span class="flaticon-resume"></span>
-										</div>
-										<div class="desc text-left">
-											<strong class="number" data-number="80000">0</strong>
-											<span>Nhân Viên Tích Cực</span>
 										</div>
 									</div>
 								</div>
@@ -124,7 +111,7 @@
 													<div class="form-group">
 														<div class="form-field">
 															<div class="icon"><span class="icon-briefcase"></span></div>
-															<input type="text" class="form-control" placeholder="eg. Garphic. Web Developer">
+															<input type="text" class="form-control" id="qualifcationNameByJob" placeholder="Trình độ công việc">
 														</div>
 													</div>
 												</div>
@@ -133,13 +120,8 @@
 														<div class="form-field">
 															<div class="select-wrap">
 																<div class="icon"><span class="ion-ios-arrow-down"></span></div>
-																<select name="" id="#" class="form-control">
-																	<option value="">Danh Mục</option>
-																	<option value="">Toàn Thời Gian</option>
-																	<option value="">Theo Giờ</option>
-																	<option value="">Làm Nghề Tự Do</option>
-																	<option value="">Nhân Viên Thực Tập</option>
-																	<option value="">Tạm Thời</option>
+																<select id="programmingLanguageJob" class="form-control">
+
 																</select>
 															</div>
 														</div>
@@ -149,14 +131,14 @@
 													<div class="form-group">
 														<div class="form-field">
 															<div class="icon"><span class="icon-map-marker"></span></div>
-															<input type="text" class="form-control" placeholder="Địa Điểm">
+															<input type="text" id="locationByJob" class="form-control" placeholder="Địa Điểm">
 														</div>
 													</div>
 												</div>
 												<div class="col-md">
 													<div class="form-group">
 														<div class="form-field">
-															<button type="submit" class="form-control btn btn-primary">Tìm Kiếm</button>
+															<button type="submit" onclick="searchJob()" class="form-control btn btn-primary">Tìm Kiếm</button>
 														</div>
 													</div>
 												</div>
@@ -171,7 +153,7 @@
 													<div class="form-group">
 														<div class="form-field">
 															<div class="icon"><span class="icon-user"></span></div>
-															<input type="text" class="form-control" placeholder="nhập công việc">
+															<input type="text" id="qualifcationNameByCandidate" class="form-control" placeholder="Trình độ ứng viên">
 														</div>
 													</div>
 												</div>
@@ -180,13 +162,8 @@
 														<div class="form-field">
 															<div class="select-wrap">
 																<div class="icon"><span class="ion-ios-arrow-down"></span></div>
-																<select name="" id="" class="form-control">
-																	<option value="">Danh Mục</option>
-																	<option value="">Toàn Thời Gian</option>
-																	<option value="">Theo Giờ</option>
-																	<option value="">Làm Nghề Tự Do</option>
-																	<option value="">Nhân Viên Thực Tập</option>
-																	<option value="">Tạm Thời</option>
+																<select  id="programmingLanguageCandidate" class="form-control">
+
 																</select>
 															</div>
 														</div>
@@ -196,7 +173,7 @@
 													<div class="form-group">
 														<div class="form-field">
 															<div class="icon"><span class="icon-map-marker"></span></div>
-															<input type="text" class="form-control" placeholder="Địa Điểm">
+															<input type="text" id ="locationByCandidate"  class="form-control" placeholder="Địa Điểm">
 														</div>
 													</div>
 												</div>
@@ -228,15 +205,8 @@
 						<div class="row">
 							<div class="col-md-12 ftco-animate">
 								<div class="job-post-item p-4 d-block d-lg-flex align-items-center">
-									<div class="one-third mb-4 mb-md-0">
-										<div class="job-post-item-header align-items-center">
-											<span class="subadge">tên loại cv</span>
-											<h2 class="mr-3 text-black"><a href="#">công vc</a></h2>
-										</div>
-										<div class="job-post-item-body d-block d-md-flex">
-											<div class="mr-3"><span class="icon-layers"></span> <a href="#">link face.</a></div>
-											<div><span class="icon-my_location"></span> <span>Địa chỉ</span></div>
-										</div>
+									<div class="one-third mb-4 mb-md-0" id ="resultSearch">
+
 									</div>
 
 									<div class="one-forth ml-auto d-flex align-items-center mt-4 md-md-0">
@@ -258,16 +228,8 @@
 		        </div>
 		        <div class="row mt-5">
 		          <div class="col text-center">
-		            <div class="block-27">
-		              <ul>
-		                <li><a href="#">&lt;</a></li>
-		                <li class="active"><span>1</span></li>
-		                <li><a href="#">2</a></li>
-		                <li><a href="#">3</a></li>
-		                <li><a href="#">4</a></li>
-		                <li><a href="#">5</a></li>
-		                <li><a href="#">&gt;</a></li>
-		              </ul>
+		            <div class="block-27" id="page">
+
 		            </div>
 		          </div>
 		        </div>
@@ -438,6 +400,8 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
-    
-  </body>
+<script src="js/getData/data.js"></script>
+
+
+</body>
 </html>
