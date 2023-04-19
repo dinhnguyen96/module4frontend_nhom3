@@ -227,6 +227,38 @@ function getAllDataSearch()
             document.getElementById("programmingLanguageCandidate").innerHTML = content;
         }
     });
+    let fourthRequest = $.ajax({
+
+        type: "GET",
+        //tên API
+        url: "http://localhost:8080/all/homes/programmingLanguage",
+        success: function (data) {
+            let content = "";
+            if (data !== undefined) {
+                for (let i = 0; i < data.length;i++)
+                {
+                    content += getProgrammingLanguageByCheckBox(data[i])
+                }
+            }
+            document.getElementById("programmingLanguageDisplay").innerHTML = content;
+        }
+    });
+    let fifthRequest = $.ajax({
+
+        type: "GET",
+        //tên API
+        url: "http://localhost:8080/all/homes/cityNames",
+        success: function (data) {
+            let content = "";
+            if (data !== undefined) {
+                for (let i = 0; i < data.length;i++)
+                {
+                    content += getlocationByCheckBox(data[i])
+                }
+            }
+            document.getElementById("locationDisplay").innerHTML = content;
+        }
+    });
 
 
   getAllListJobPage(0);
@@ -236,6 +268,8 @@ function getAllDataSearch()
     requests.push(firstRequest);
     requests.push(secondRequest);
     requests.push(thirdRequest);
+    requests.push(fourthRequest);
+    requests.push(firstRequest);
     $.when.apply($, requests).done(function()
     {
         console.log('All requests complete');
@@ -252,6 +286,10 @@ function getCompanies(data)
     return `<li><img src='/template/images/company/${data.avatar}' width="150" height="150" >
  <br><button onclick="detailCompany(${data.id})" class="btn-info">${data.name}</button><br>
  </li>`;
+}
+function getProgrammingLanguageByCheckBox(data)
+{
+    return `<label><input type="checkbox" id="option-job-2" name="programmingLanguage" value="${data.id}">${data.name}</label><br>`;
 }
 
 function getAllListCompanyPage(page)
@@ -456,11 +494,26 @@ function getAllListJobBrowser()
             if (data !== undefined) {
                 for (let i = 0; i < data.length;i++)
                 {
-                    content += getProgrammingLanguage(data[i])
+                    content += getProgrammingLanguageByCheckBox(data[i])
                 }
             }
-            document.getElementById("programmingLanguageJob").innerHTML = content;
-            document.getElementById("programmingLanguageCandidate").innerHTML = content;
+            document.getElementById("programmingLanguageDisplay").innerHTML = content;
+        }
+    });
+    let fourthRequest = $.ajax({
+
+        type: "GET",
+        //tên API
+        url: "http://localhost:8080/all/homes/cityNames",
+        success: function (data) {
+            let content = "";
+            if (data !== undefined) {
+                for (let i = 0; i < data.length;i++)
+                {
+                    content += getlocationByCheckBox(data[i])
+                }
+            }
+            document.getElementById("locationDisplay").innerHTML = content;
         }
     });
     getAllListJobPageBrowser(0);
@@ -468,12 +521,17 @@ function getAllListJobBrowser()
     requests.push(firstRequest);
     requests.push(secondRequest);
     requests.push(thirdRequest);
+    requests.push(fourthRequest);
     $.when.apply($, requests).done(function()
     {
         console.log('All requests complete');
     }).fail(function() {
         console.log('At least one request failed');
     });
+}
+function getlocationByCheckBox(name)
+{
+    return `<label><input type="checkbox" id="location" name="location" value="">${name}</label><br>`;
 }
 function getAllListJobPageBrowser(page)
 {
