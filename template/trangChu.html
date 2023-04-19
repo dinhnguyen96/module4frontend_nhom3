@@ -1,633 +1,592 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Hệ Thống Tuyển Dụng Việc Làm Lớn Nhất Việt Nam</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Hệ Thống Tuyển Dụng Việc Làm  Lớn Nhất Việt Nam</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
 
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
 
-    <link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/aos.css">
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
+	<link rel="stylesheet" href="css/ionicons.min.css">
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="css/jquery.timepicker.css">
 
 
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="loginRegistrationForm/logout.js"></script>
-    <script src="loginRegistrationForm/login.js"></script>
-    <script src="loginRegistrationForm/setRole.js"></script>
-    <script src="js/getData/detailCompany.js"></script>
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="loginRegistrationForm/logout.js"></script>
+	<script src="loginRegistrationForm/login.js"></script>
+	<script src="loginRegistrationForm/setRole.js"></script>
+	<script src="js/getData/detailCompany.js"></script>
     <script src="js/getData/data.js"></script>
 </head>
 <body onload="getAllData()">
 
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-    <div class="container-fluid px-md-4	">
-        <a class="navbar-brand" href="trangChu.html"><img
-                src="https://dxwd4tssreb4w.cloudfront.net/web/images/logo.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="oi oi-menu"></span> Menu
-        </button>
+	<div class="container-fluid px-md-4	">
+		<a class="navbar-brand" href="trangChu.html"><img src="https://dxwd4tssreb4w.cloudfront.net/web/images/logo.png"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="oi oi-menu"></span> Menu
+		</button>
 
-        <div class="collapse navbar-collapse" id="ftco-nav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a href="loginRegistrationForm/index.html" class="nav-link">Đăng nhập</a></li>
-                <li class="nav-item"><a href="trangChu.html" class="nav-link">Trang Chủ</a></li>
-                <li class="nav-item"><a href="duyetCongViec.html" class="nav-link">Duyệt Công Việc</a></li>
-                <li class="nav-item"><a href="ungVien.html" class="nav-link">Ứng Viên</a></li>
-                <li class="nav-item"><a href="trangTin.html" class="nav-link">Trang Tin</a></li>
-                <li class="nav-item"><a href="lienHe.html" class="nav-link">Liên Hệ</a></li>
-                <li class="nav-item cta mr-md-1"><a href="../../module4frontend_nhom3/template/creatCompany/index.html"
-                                                    class="nav-link">Đăng Tin</a></li>
-                <li class="nav-item cta cta-colored"><a
-                        href="../../module4frontend_nhome3/template/loginRegistrationForm/index.html" class="nav-link">Tìm
-                    Việc</a></li>
-            </ul>
-        </div>
-    </div>
+		<div class="collapse navbar-collapse" id="ftco-nav">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item"><a href="loginRegistrationForm/index.html" class="nav-link">Đăng nhập</a></li>
+				<li class="nav-item"><a href="trangChu.html" class="nav-link">Trang Chủ</a></li>
+				<li class="nav-item"><a href="duyetCongViec.html" class="nav-link">Duyệt Công Việc</a></li>
+				<li class="nav-item"><a href="ungVien.html" class="nav-link">Ứng Viên</a></li>
+				<li class="nav-item"><a href="trangTin.html" class="nav-link">Trang Tin</a></li>
+				<li class="nav-item"><a href="lienHe.html" class="nav-link">Liên Hệ</a></li>
+				<li class="nav-item cta mr-md-1"><a href="../template/loginRegistrationForm/index.html" class="nav-link">Đăng Tin</a></li>
+				<li class="nav-item cta cta-colored"><a href="../../module4frontend_nhome3/template/loginRegistrationForm/index.html" class="nav-link">Tìm Việc</a></li>
+			</ul>
+		</div>
+	</div>
 </nav>
 <!-- END nav -->
 
 <div class="hero-wrap img" style="background-image: url(images/bg_1.jpg);">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-center">
-            <div class="col-md-10 d-flex align-items-center ftco-animate">
-                <div class="text text-center pt-5 mt-md-5">
-                    <p class="mb-4">Cơ Hội Việc Làm Dành Cho Bạn</p>
-                    <h1 class="mb-5">Cách Tốt Nhất Để Bạn Tìm Việc Làm</h1>
-                    <div class="ftco-counter ftco-no-pt ftco-no-pb">
-                        <div class="row">
-                            <div class="col-md-4 d-flex justify-content-center counter-wrap ftco-animate">
-                                <div class="block-18">
-                                    <div class="text d-flex">
-                                        <div class="icon mr-2">
-                                            <span class="flaticon-worldwide"></span>
-                                        </div>
-                                        <div class="desc text-left">
-                                            <strong class="number" id="locationNumber" data-number="0"></strong>
-                                            <span>Địa Điểm</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 d-flex justify-content-center counter-wrap ftco-animate">
-                                <div class="block-18 text-center">
-                                    <div class="text d-flex">
-                                        <div class="icon mr-2">
-                                            <span class="flaticon-visitor"></span>
-                                        </div>
-                                        <div class="desc text-left">
-                                            <strong class="number" id="companyNumber" data-number="0"></strong>
-                                            <span>Danh Sách Công Ty</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ftco-search my-md-5">
-                        <div class="row">
-                            <div class="col-md-12 nav-link-wrap">
-                                <div class="nav nav-pills text-center" id="v-pills-tab" role="tablist"
-                                     aria-orientation="vertical">
-                                    <a class="nav-link active mr-md-1" id="v-pills-1-tab" data-toggle="pill"
-                                       href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Tìm
-                                        Việc Làm</a>
+	<div class="overlay"></div>
+	<div class="container">
+		<div class="row d-md-flex no-gutters slider-text align-items-center justify-content-center">
+			<div class="col-md-10 d-flex align-items-center ftco-animate">
+				<div class="text text-center pt-5 mt-md-5">
+					<p class="mb-4">Cơ Hội Việc Làm Dành Cho Bạn</p>
+					<h1 class="mb-5">Cách Tốt Nhất Để Bạn Tìm Việc Làm</h1>
+					<div class="ftco-counter ftco-no-pt ftco-no-pb">
+						<div class="row">
+							<div class="col-md-4 d-flex justify-content-center counter-wrap ftco-animate">
+								<div class="block-18">
+									<div class="text d-flex">
+										<div class="icon mr-2">
+											<span class="flaticon-worldwide"></span>
+										</div>
+										<div class="desc text-left">
+											<strong class="number" id="locationNumber" data-number="0"></strong>
+											<span>Địa Điểm</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 d-flex justify-content-center counter-wrap ftco-animate">
+								<div class="block-18 text-center">
+									<div class="text d-flex">
+										<div class="icon mr-2">
+											<span class="flaticon-visitor"></span>
+										</div>
+										<div class="desc text-left">
+											<strong class="number" id="companyNumber" data-number="0"></strong>
+											<span>Danh Sách Công Ty</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ftco-search my-md-5">
+						<div class="row">
+							<div class="col-md-12 nav-link-wrap">
+								<div class="nav nav-pills text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+									<a class="nav-link active mr-md-1" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Tìm Việc Làm</a>
 
-                                    <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2"
-                                       role="tab" aria-controls="v-pills-2" aria-selected="false">Tìm Ứng Viên</a>
+									<a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Tìm Ứng Viên</a>
 
-                                </div>
-                            </div>
-                            <div class="col-md-12 tab-wrap">
+								</div>
+							</div>
+							<div class="col-md-12 tab-wrap">
 
-                                <div class="tab-content p-4" id="v-pills-tabContent">
+								<div class="tab-content p-4" id="v-pills-tabContent">
 
-                                    <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel"
-                                         aria-labelledby="v-pills-nextgen-tab">
-                                        <form action="#" class="search-job">
-                                            <div class="row no-gutters">
-                                                <div class="col-md mr-md-2">
-                                                    <div class="form-group">
-                                                        <div class="form-field">
-                                                            <div class="icon"><span class="icon-briefcase"></span></div>
-                                                            <input type="text" class="form-control"
-                                                                   id="qualifcationNameByJob"
-                                                                   placeholder="Trình độ công việc">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md mr-md-2">
-                                                    <div class="form-group">
-                                                        <div class="form-field">
-                                                            <div class="select-wrap">
-                                                                <div class="icon"><span
-                                                                        class="ion-ios-arrow-down"></span></div>
-                                                                <select id="programmingLanguageJob"
-                                                                        class="form-control">
+									<div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-nextgen-tab">
+										<form action="#" class="search-job" >
+											<div class="row no-gutters">
+												<div class="col-md mr-md-2">
+													<div class="form-group">
+														<div class="form-field">
+															<div class="icon"><span class="icon-briefcase"></span></div>
+															<input type="text" class="form-control" id="qualifcationNameByJob" placeholder="Trình độ công việc">
+														</div>
+													</div>
+												</div>
+												<div class="col-md mr-md-2">
+													<div class="form-group">
+														<div class="form-field">
+															<div class="select-wrap">
+																<div class="icon"><span class="ion-ios-arrow-down"></span></div>
+																<select id="programmingLanguageJob" class="form-control">
 
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md mr-md-2">
-                                                    <div class="form-group">
-                                                        <div class="form-field">
-                                                            <div class="icon"><span class="icon-map-marker"></span>
-                                                            </div>
-                                                            <input type="text" id="locationByJob" class="form-control"
-                                                                   placeholder="Địa Điểm">
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-md mr-md-2">
+													<div class="form-group">
+														<div class="form-field">
+															<div class="icon"><span class="icon-map-marker"></span></div>
+															<input type="text" id="locationByJob" class="form-control" placeholder="Địa Điểm">
 
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md">
-                                                    <div class="form-group">
-                                                        <div class="form-field">
-                                                            <button type="button" onclick="searchJob()"
-                                                                    class="form-control btn btn-primary">Tìm Kiếm
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
+														</div>
+													</div>
+												</div>
+												<div class="col-md">
+													<div class="form-group">
+														<div class="form-field">
+															<button type="button" onclick="searchJob()" class="form-control btn btn-primary">Tìm Kiếm</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
 
-                                    <div class="tab-pane fade" id="v-pills-2" role="tabpanel"
-                                         aria-labelledby="v-pills-performance-tab">
-                                        <form action="#" class="search-job" autocomplete="on">
-                                            <div class="row">
-                                                <div class="col-md">
-                                                    <div class="form-group">
-                                                        <div class="form-field">
-                                                            <div class="icon"><span class="icon-user"></span></div>
-                                                            <input type="text" id="qualifcationNameByCandidate"
-                                                                   class="form-control" placeholder="Trình độ ứng viên">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md">
-                                                    <div class="form-group">
-                                                        <div class="form-field">
-                                                            <div class="select-wrap">
-                                                                <div class="icon"><span
-                                                                        class="ion-ios-arrow-down"></span></div>
-                                                                <select id="programmingLanguageCandidate"
-                                                                        class="form-control">
+									<div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-performance-tab">
+										<form action="#" class="search-job" autocomplete="on" >
+											<div class="row">
+												<div class="col-md">
+													<div class="form-group">
+														<div class="form-field">
+															<div class="icon"><span class="icon-user"></span></div>
+															<input type="text" id="qualifcationNameByCandidate"  class="form-control" placeholder="Trình độ ứng viên">
+														</div>
+													</div>
+												</div>
+												<div class="col-md">
+													<div class="form-group">
+														<div class="form-field">
+															<div class="select-wrap">
+																<div class="icon"><span class="ion-ios-arrow-down"></span></div>
+																<select  id="programmingLanguageCandidate" class="form-control">
 
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md">
-                                                    <div class="form-group">
-                                                        <div class="form-field">
-                                                            <div class="icon"><span class="icon-map-marker"></span>
-                                                            </div>
-                                                            <input type="text" id="locationByCandidate"
-                                                                   class="form-control" placeholder="Địa Điểm">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md">
-                                                    <div class="form-group">
-                                                        <div class="form-field">
-                                                            <button type="submit" class="form-control btn btn-primary">
-                                                                Tìm Kiếm
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-md">
+													<div class="form-group">
+														<div class="form-field">
+															<div class="icon"><span class="icon-map-marker"></span></div>
+															<input type="text" id ="locationByCandidate" class="form-control" placeholder="Địa Điểm">
+														</div>
+													</div>
+												</div>
+												<div class="col-md">
+													<div class="form-group">
+														<div class="form-field">
+															<button type="submit" class="form-control btn btn-primary">Tìm Kiếm</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <section class="ftco-section">
-    <div class="container">
-        <div class="row justify-content-center mb-5">
-            <div class="col-md-7 heading-section text-center ftco-animate">
-                <h2 class="mb-0">Nhà Tuyển Dụng Hàng Đầu</h2>
-            </div>
-        </div>
-        <div class="row">
-            <!--			đưa code vào đây-->
-            <div class="col-md-5 ftco-animate">
-                <ul id="companyInfo">
-                </ul>
-                <div class="pagination" id="pageCompany">
+	<div class="container">
+		<div class="row justify-content-center mb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+				<h2 class="mb-0">Nhà Tuyển Dụng Hàng Đầu</h2>
+			</div>
+		</div>
+		<div class="row">
+			<!--			đưa code vào đây-->
+			<div class="col-md-5 ftco-animate">
+				<ul id = "companyInfo">
+				</ul>
+				<div class="pagination" id="pageCompany">
 
-                </div>
-            </div>
-        </div>
-    </div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 <section class="ftco-section services-section">
-    <div class="container">
-        <div class="row d-flex">
-            <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                <div class="media block-6 services d-block">
-                    <div class="icon"><span class="flaticon-resume"></span></div>
-                    <div class="media-body">
-                        <h3 class="heading mb-3">Tìm kiếm hàng triệu việc làm</h3>
-                        <p>Luôn có công việc phù hợp để dành cho bạn.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                <div class="media block-6 services d-block">
-                    <div class="icon"><span class="flaticon-team"></span></div>
-                    <div class="media-body">
-                        <h3 class="heading mb-3">Dễ dàng quản lý công việc</h3>
-                        <p>Hãy liên hệ với chúng tôi để được tư vấn và hỗ trợ</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                <div class="media block-6 services d-block">
-                    <div class="icon"><span class="flaticon-career"></span></div>
-                    <div class="media-body">
-                        <h3 class="heading mb-3">Nghề nghiệp hàng đầu</h3>
-                        <p>Chúng tôi luôn có những công việc hàng đầu</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                <div class="media block-6 services d-block">
-                    <div class="icon"><span class="flaticon-employees"></span></div>
-                    <div class="media-body">
-                        <h3 class="heading mb-3">Tìm kiếm ứng viên chuyên gia</h3>
-                        <p>Chúng tôi luôn có những ứng viên với năng lực tốt nhất cho từng công việc.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="container">
+		<div class="row d-flex">
+			<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+				<div class="media block-6 services d-block">
+					<div class="icon"><span class="flaticon-resume"></span></div>
+					<div class="media-body">
+						<h3 class="heading mb-3">Tìm kiếm hàng triệu việc làm</h3>
+						<p>Luôn có công việc phù hợp để dành cho bạn.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+				<div class="media block-6 services d-block">
+					<div class="icon"><span class="flaticon-team"></span></div>
+					<div class="media-body">
+						<h3 class="heading mb-3">Dễ dàng quản lý công việc</h3>
+						<p>Hãy liên hệ với chúng tôi để được tư vấn và hỗ trợ</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+				<div class="media block-6 services d-block">
+					<div class="icon"><span class="flaticon-career"></span></div>
+					<div class="media-body">
+						<h3 class="heading mb-3">Nghề nghiệp hàng đầu</h3>
+						<p>Chúng tôi luôn có những công việc hàng đầu</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+				<div class="media block-6 services d-block">
+					<div class="icon"><span class="flaticon-employees"></span></div>
+					<div class="media-body">
+						<h3 class="heading mb-3">Tìm kiếm ứng viên chuyên gia</h3>
+						<p>Chúng tôi luôn có những ứng viên với năng lực tốt nhất cho từng công việc.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
 <section class="ftco-section bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-9 pr-lg-5">
-                <div class="row justify-content-center pb-3">
-                    <div class="col-md-12 heading-section ftco-animate">
-                        <span class="subheading">Công việc thêm gần đây</span>
-                        <h2 class="mb-4">Bài đăng việc làm nổi bật trong tuần này</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 ftco-animate">
-                        <div class="job-post-item p-4 d-block d-lg-flex align-items-center">
-                            <div class="one-third mb-4 mb-md-0">
-                                <div class="job-post-item-header align-items-center">
-                                    <span class="subadge">tên loại cv</span>
-                                    <h2 class="mr-3 text-black"><a href="#">công vc</a></h2>
-                                </div>
-                                <div class="job-post-item-body d-block d-md-flex">
-                                    <div class="mr-3"><span class="icon-layers"></span> <a href="#">link face.</a></div>
-                                    <div><span class="icon-my_location"></span> <span>Địa chỉ</span></div>
-                                </div>
-                            </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-9 pr-lg-5">
+				<div class="row justify-content-center pb-3">
+					<div class="col-md-12 heading-section ftco-animate">
+						<span class="subheading">Công việc thêm gần đây</span>
+						<h2 class="mb-4">Bài đăng việc làm nổi bật trong tuần này</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 ftco-animate">
+						<div class="job-post-item p-4 d-block d-lg-flex align-items-center">
+							<div class="one-third mb-4 mb-md-0">
+								<div class="job-post-item-header align-items-center">
+									<span class="subadge">tên loại cv</span>
+									<h2 class="mr-3 text-black"><a href="#">công vc</a></h2>
+								</div>
+								<div class="job-post-item-body d-block d-md-flex">
+									<div class="mr-3"><span class="icon-layers"></span> <a href="#">link face.</a></div>
+									<div><span class="icon-my_location"></span> <span>Địa chỉ</span></div>
+								</div>
+							</div>
 
-                            <div class="one-forth ml-auto d-flex align-items-center mt-4 md-md-0">
-                                <div>
-                                    <a href="#"
-                                       class="icon text-center d-flex justify-content-center align-items-center icon mr-2">
-                                        <span class="icon-heart"></span>
-                                    </a>
-                                </div>
-                                <a href="job-single.html" class="btn btn-primary py-2">Đăng Kí</a>
-                            </div>
-                        </div>
-                    </div><!-- end -->
+							<div class="one-forth ml-auto d-flex align-items-center mt-4 md-md-0">
+								<div>
+									<a href="#" class="icon text-center d-flex justify-content-center align-items-center icon mr-2">
+										<span class="icon-heart"></span>
+									</a>
+								</div>
+								<a href="job-single.html" class="btn btn-primary py-2">Đăng Kí</a>
+							</div>
+						</div>
+					</div><!-- end -->
 
 
-                </div>
-            </div>
-            <div class="col-lg-3 sidebar">
-                <div class="row justify-content-center pb-3">
-                    <div class="col-md-12 heading-section ftco-animate">
-                        <h2 class="mb-4">Tuyển Dụng Hàng Đầu</h2>
-                    </div>
-                </div>
-                <div class="sidebar-box ftco-animate">
-                    <div class="">
-                        <a href="#" class="company-wrap"><img src="images/company-1.jpg" class="img-fluid"
-                                                              alt="Colorlib Free Template"></a>
-                        <div class="text p-3">
-                            <h3><a href="#">Công Ty</a></h3>
-                            <p><span class="number">500</span> <span>Xem địa chỉ</span></p>
-                        </div>
-                    </div>
-                </div>
+				</div>
+			</div>
+			<div class="col-lg-3 sidebar">
+				<div class="row justify-content-center pb-3">
+					<div class="col-md-12 heading-section ftco-animate">
+						<h2 class="mb-4">Tuyển Dụng Hàng Đầu</h2>
+					</div>
+				</div>
+				<div class="sidebar-box ftco-animate">
+					<div class="">
+						<a href="#" class="company-wrap"><img src="images/company-1.jpg" class="img-fluid" alt="Colorlib Free Template"></a>
+						<div class="text p-3">
+							<h3><a href="#">Công Ty</a></h3>
+							<p><span class="number">500</span> <span>Xem địa chỉ</span></p>
+						</div>
+					</div>
+				</div>
 
-            </div>
-        </div>
-    </div>
+			</div>
+		</div>
+	</div>
 </section>
+
 
 
 <section class="ftco-section testimony-section">
-    <div class="container">
-        <div class="row justify-content-center mb-4">
-            <div class="col-md-7 text-center heading-section ftco-animate">
-                <span class="subheading">Chứng Thực</span>
-                <h2 class="mb-4">Những ứng viên hàng đầu</h2>
-            </div>
-        </div>
-        <div class="row ftco-animate">
-            <div class="col-md-12">
-                <div class="carousel-testimony owl-carousel ftco-owl">
-                    <div class="item">
-                        <div class="testimony-wrap py-4">
-                            <div class="text">
-                                <p class="mb-4">Chúng tôi luôn đồng hành cùng các bạn trên mọi nẻo đường.</p>
-                                <div class="d-flex align-items-center">
-                                    <div class="user-img" style="background-image: url(images/doan.jpg)"></div>
-                                    <div class="pl-3">
-                                        <p class="name">Lê Minh Đoàn</p>
-                                        <span class="position">Embedded c++ Developer</span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimony-wrap py-4">
-                            <div class="text">
-                                <p class="mb-4">Hãy đến với chúng tôi để có công việc hàng đầu.</p>
-                                <div class="d-flex align-items-center">
-                                    <div class="user-img" style="background-image: url(images/nguyen.jpg)"></div>
-                                    <div class="pl-3">
-                                        <p class="name">Nguyễn Đình Nguyên</p>
-                                        <span class="position">Senior Java Software Engineer</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimony-wrap py-4">
-                            <div class="text">
-                                <p class="mb-4">Hãy tin vào con đường mà mình đã chọn đó là trở thành 1 lập trình viên
-                                    chuyên nghiệp</p>
-                                <div class="d-flex align-items-center">
-                                    <div class="user-img" style="background-image: url(images/tuan.jpg)"></div>
-                                    <div class="pl-3">
-                                        <p class="name">Nguyễn Anh Tuấn</p>
-                                        <span class="position">Java Developer</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimony-wrap py-4">
-                            <div class="text">
-                                <p class="mb-4">Không có con đường nào dẫn tới thành công vì thành công chính là con
-                                    đường</p>
-                                <div class="d-flex align-items-center">
-                                    <div class="user-img" style="background-image: url(images/son.jpg)"></div>
-                                    <div class="pl-3">
-                                        <p class="name">Thanh Sơn</p>
-                                        <span class="position">Java Middle</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="container">
+		<div class="row justify-content-center mb-4">
+			<div class="col-md-7 text-center heading-section ftco-animate">
+				<span class="subheading">Chứng Thực</span>
+				<h2 class="mb-4">Những ứng viên hàng đầu</h2>
+			</div>
+		</div>
+		<div class="row ftco-animate">
+			<div class="col-md-12">
+				<div class="carousel-testimony owl-carousel ftco-owl">
+					<div class="item">
+						<div class="testimony-wrap py-4">
+							<div class="text">
+								<p class="mb-4">Chúng tôi luôn đồng hành cùng các bạn trên mọi nẻo đường.</p>
+								<div class="d-flex align-items-center">
+									<div class="user-img" style="background-image: url(images/doan.jpg)"></div>
+									<div class="pl-3">
+										<p class="name">Lê Minh Đoàn</p>
+										<span class="position">Embedded c++ Developer</span>
+</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="testimony-wrap py-4">
+							<div class="text">
+								<p class="mb-4">Hãy đến với chúng tôi để có công việc hàng đầu.</p>
+								<div class="d-flex align-items-center">
+									<div class="user-img" style="background-image: url(images/nguyen.jpg)"></div>
+									<div class="pl-3">
+										<p class="name">Nguyễn Đình Nguyên</p>
+										<span class="position">Senior Java Software Engineer</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="testimony-wrap py-4">
+							<div class="text">
+								<p class="mb-4">Hãy tin vào con đường mà mình đã chọn đó là trở thành 1 lập trình viên chuyên nghiệp</p>
+								<div class="d-flex align-items-center">
+									<div class="user-img" style="background-image: url(images/tuan.jpg)"></div>
+									<div class="pl-3">
+										<p class="name">Nguyễn Anh Tuấn</p>
+										<span class="position">Java Developer</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="testimony-wrap py-4">
+							<div class="text">
+								<p class="mb-4">Không có con đường nào dẫn tới thành công vì thành công chính là con đường</p>
+								<div class="d-flex align-items-center">
+									<div class="user-img" style="background-image: url(images/son.jpg)"></div>
+									<div class="pl-3">
+										<p class="name">Thanh Sơn</p>
+										<span class="position">Java Middle</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
 <section class="ftco-section ftco-candidates bg-primary">
-    <div class="container">
-        <div class="row justify-content-center pb-3">
-            <div class="col-md-10 heading-section heading-section-white text-center ftco-animate">
-                <span class="subheading">Ứng Viên</span>
-                <h2 class="mb-4">Các chuyên gia hàng đầu</h2>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 ftco-animate">
-                <div class="carousel-candidates owl-carousel">
-                    <div class="item">
-                        <a href="#" class="team text-center">
-                            <div class="img" style="background-image: url(images/son.jpg);"></div>
-                            <h2>Danica Lewis</h2>
-                            <span class="position">Western City, UK</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="container">
+		<div class="row justify-content-center pb-3">
+			<div class="col-md-10 heading-section heading-section-white text-center ftco-animate">
+				<span class="subheading">Ứng Viên</span>
+				<h2 class="mb-4">Các chuyên gia hàng đầu</h2>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 ftco-animate">
+				<div class="carousel-candidates owl-carousel">
+					<div class="item">
+						<a href="#" class="team text-center">
+							<div class="img" style="background-image: url(images/son.jpg);"></div>
+							<h2>Danica Lewis</h2>
+							<span class="position">Western City, UK</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
 <section class="ftco-section bg-light">
-    <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-            <div class="col-md-7 heading-section text-center ftco-animate">
-                <span class="subheading">Tin Tuyển Dụng Nổi Bật</span>
-                <h2> Tin Tức</h2>
-            </div>
-        </div>
-        <div class="row d-flex">
-            <div class="col-md-3 d-flex ftco-animate">
-                <div class="blog-entry align-self-stretch">
-                    <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
-                    </a>
-                    <div class="text mt-3">
-                        <div class="meta mb-2">
-                            <div><a href="#">August 28, 2019</a></div>
-                            <div><a href="#">Quản Trị Viên</a></div>
-                            <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                        </div>
-                        <h3 class="heading"><a href="#">Cơ hội việc làm tại FPT SOFTWARE</a></h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 d-flex ftco-animate">
-                <div class="blog-entry align-self-stretch">
-                    <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
-                    </a>
-                    <div class="text mt-3">
-                        <div class="meta mb-2">
-                            <div><a href="#">August 28, 2019</a></div>
-                            <div><a href="#">Kĩ Sư Phần Mềm</a></div>
-                            <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                        </div>
-                        <h3 class="heading"><a href="#">Viện Nghiên Cứu Khoa Học Công Nghệ</a></h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 d-flex ftco-animate">
-                <div class="blog-entry align-self-stretch">
-                    <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
-                    </a>
-                    <div class="text mt-3">
-                        <div class="meta mb-2">
-                            <div><a href="#">August 28, 2019</a></div>
-                            <div><a href="#">Chuyên Gia Bảo Mật</a></div>
-                            <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                        </div>
-                        <h3 class="heading"><a href="#">Chuyên đào tạo ra các lập trình viên tôt nhất</a></h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 d-flex ftco-animate">
-                <div class="blog-entry align-self-stretch">
-                    <a href="blog-single.html" class="block-20" style="background-image: url('images/image_4.jpg');">
-                    </a>
-                    <div class="text mt-3">
-                        <div class="meta mb-2">
-                            <div><a href="#">August 28, 2019</a></div>
-                            <div><a href="#">Thiết Kế Đồ Họa</a></div>
-                            <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                        </div>
-                        <h3 class="heading"><a href="#">Đào tạo ra các lập trình viên chuyên thiết kế đồ họa</a></h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="container">
+		<div class="row justify-content-center mb-5 pb-3">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+				<span class="subheading">Tin Tuyển Dụng Nổi Bật</span>
+				<h2> Tin Tức</h2>
+			</div>
+		</div>
+		<div class="row d-flex">
+			<div class="col-md-3 d-flex ftco-animate">
+				<div class="blog-entry align-self-stretch">
+					<a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
+					</a>
+					<div class="text mt-3">
+						<div class="meta mb-2">
+							<div><a href="#">August 28, 2019</a></div>
+							<div><a href="#">Quản Trị Viên</a></div>
+							<div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+						</div>
+						<h3 class="heading"><a href="#">Cơ hội việc làm tại FPT SOFTWARE</a></h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 d-flex ftco-animate">
+				<div class="blog-entry align-self-stretch">
+					<a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
+					</a>
+					<div class="text mt-3">
+						<div class="meta mb-2">
+							<div><a href="#">August 28, 2019</a></div>
+							<div><a href="#">Kĩ Sư Phần Mềm</a></div>
+							<div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+						</div>
+						<h3 class="heading"><a href="#">Viện Nghiên Cứu Khoa Học Công Nghệ</a></h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 d-flex ftco-animate">
+				<div class="blog-entry align-self-stretch">
+					<a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
+					</a>
+					<div class="text mt-3">
+						<div class="meta mb-2">
+							<div><a href="#">August 28, 2019</a></div>
+							<div><a href="#">Chuyên Gia Bảo Mật</a></div>
+							<div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+						</div>
+						<h3 class="heading"><a href="#">Chuyên đào tạo ra các lập trình viên tôt nhất</a></h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 d-flex ftco-animate">
+				<div class="blog-entry align-self-stretch">
+					<a href="blog-single.html" class="block-20" style="background-image: url('images/image_4.jpg');">
+					</a>
+					<div class="text mt-3">
+						<div class="meta mb-2">
+							<div><a href="#">August 28, 2019</a></div>
+							<div><a href="#">Thiết Kế Đồ Họa</a></div>
+							<div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+						</div>
+						<h3 class="heading"><a href="#">Đào tạo ra các lập trình viên chuyên thiết kế đồ họa</a></h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
 <section class="ftco-section-parallax">
-    <div class="parallax-img d-flex align-items-center">
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-                    <h2>Hãy Đăng Kí Để Nhận Được Tin Tức Đăng Tuyển</h2>
-                    <p>Bạn sẽ nhận được thông tin tuyển dụng sớm nhất khi đăng kí bằng cách ấn nút Đăng Kí </p>
-                    <div class="row d-flex justify-content-center mt-4 mb-4">
-                        <div class="col-md-12">
-                            <form action="#" class="subscribe-form">
-                                <div class="form-group d-flex">
-                                    <input type="text" class="form-control" placeholder="Nhập email">
-                                    <input type="submit" value="Đăng Kí" class="submit px-3">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="parallax-img d-flex align-items-center">
+		<div class="container">
+			<div class="row d-flex justify-content-center">
+				<div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+					<h2>Hãy Đăng Kí Để Nhận Được Tin Tức Đăng Tuyển</h2>
+					<p>Bạn sẽ nhận được thông tin tuyển dụng sớm nhất khi đăng kí bằng cách ấn nút Đăng Kí  </p>
+					<div class="row d-flex justify-content-center mt-4 mb-4">
+						<div class="col-md-12">
+							<form action="#" class="subscribe-form">
+								<div class="form-group d-flex">
+									<input type="text" class="form-control" placeholder="Nhập email">
+									<input type="submit" value="Đăng Kí" class="submit px-3">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
 <footer class="ftco-footer ftco-bg-dark ftco-section">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-md">
-                <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2">Kênh Liên Hệ</h2>
-                    <p>Hãy liên hệ với chúng tôi qua các kênh</p>
-                    <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-                        <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                        <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                        <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2">Nhân Viên</h2>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="pb-1 d-block">Đưa tên nhân viên vào đây để khi kick vào sẽ hiện ra thông
-                            tin</a></li>
+	<div class="container">
+		<div class="row mb-5">
+			<div class="col-md">
+				<div class="ftco-footer-widget mb-4">
+					<h2 class="ftco-heading-2">Kênh Liên Hệ</h2>
+					<p>Hãy liên hệ với chúng tôi qua các kênh</p>
+					<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+						<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+						<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+						<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md">
+				<div class="ftco-footer-widget mb-4">
+					<h2 class="ftco-heading-2">Nhân Viên</h2>
+					<ul class="list-unstyled">
+						<li><a href="#" class="pb-1 d-block">Đưa tên nhân viên vào đây để khi kick vào sẽ hiện ra thông tin</a></li>
 
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="ftco-footer-widget mb-4 ml-md-4">
-                    <h2 class="ftco-heading-2">Ứng Viên</h2>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="pb-1 d-block">Đưa tên ứng viên để kick vào ra thông tin chi tiết</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="ftco-footer-widget mb-4 ml-md-4">
-                    <h2 class="ftco-heading-2">Tài Khoản</h2>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="pb-1 d-block">Tài Khoản Của Bạn</a></li>
-                        <li><a href="#" class="pb-1 d-block">Đăng Nhập</a></li>
-                        <li><a href="#" class="pb-1 d-block">Tạo Tài Khoản</a></li>
-                        <li><a href="#" class="pb-1 d-block">Đăng Xuất</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2">Bạn Cần Tư Vấn?</h2>
-                    <div class="block-23 mb-3">
-                        <ul>
-                            <li><span class="icon icon-map-marker"></span><span class="text">Lô 23 TT01 khu đô thị MonCity</span>
-                            </li>
-                            <li><a href="#"><span class="icon icon-phone"></span><span
-                                    class="text">+2 392 3929 210</span></a></li>
-                            <li><a href="mail.google.com"><span class="icon icon-envelope"></span><span class="text">chubongnguyensoai@gmail.com</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 text-center">
+					</ul>
+				</div>
+			</div>
+			<div class="col-md">
+				<div class="ftco-footer-widget mb-4 ml-md-4">
+					<h2 class="ftco-heading-2">Ứng Viên</h2>
+					<ul class="list-unstyled">
+						<li><a href="#" class="pb-1 d-block">Đưa tên ứng viên để kick vào ra thông tin chi tiết</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md">
+				<div class="ftco-footer-widget mb-4 ml-md-4">
+					<h2 class="ftco-heading-2">Tài Khoản</h2>
+					<ul class="list-unstyled">
+						<li><a href="#" class="pb-1 d-block">Tài Khoản Của Bạn</a></li>
+						<li><a href="#" class="pb-1 d-block">Đăng Nhập</a></li>
+						<li><a href="#" class="pb-1 d-block">Tạo Tài Khoản</a></li>
+						<li><a href="#" class="pb-1 d-block">Đăng Xuất</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md">
+				<div class="ftco-footer-widget mb-4">
+					<h2 class="ftco-heading-2">Bạn Cần Tư Vấn?</h2>
+					<div class="block-23 mb-3">
+						<ul>
+							<li><span class="icon icon-map-marker"></span><span class="text">Lô 23 TT01 khu đô thị MonCity</span></li>
+							<li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+							<li><a href="mail.google.com"><span class="icon icon-envelope"></span><span class="text">chubongnguyensoai@gmail.com</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 text-center">
 
-                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    Copyright &copy;<script>document.write(new Date().getFullYear());</script>
-                    Trung tâm giới thiệu việc làm lớn nhất toàn quốc với đội ngũ nhân viên nhiệt huyết và tận tâm <i
-                            class="icon-heart text-danger" aria-hidden="true"></i> bởi <a href="https://colorlib.com"
-                                                                                          target="_blank">Đoàn</a>
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-            </div>
-        </div>
-    </div>
+				<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					Copyright &copy;<script>document.write(new Date().getFullYear());</script>Trung tâm giới thiệu việc làm lớn nhất toàn quốc với đội ngũ nhân viên nhiệt huyết và tận tâm <i class="icon-heart text-danger" aria-hidden="true"></i> bởi <a href="https://colorlib.com" target="_blank">Đoàn</a>
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		</div>
+	</div>
 </footer>
 
 
+
 <!-- loader -->
-<div id="ftco-loader" class="show fullscreen">
-    <svg class="circular" width="48px" height="48px">
-        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
-        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-                stroke="#F96D00"/>
-    </svg>
-</div>
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 <script src="js/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
