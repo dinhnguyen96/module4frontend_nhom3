@@ -111,7 +111,7 @@ function searchJob()
             localStorage.setItem("qualificationName", qualificationName);
             localStorage.setItem("programmingLanguageJob", programmingLanguageJob.toString());
             localStorage.setItem("searchLocationByJob", locationJob)
-            window.location.href = "http://localhost:63343/module4frontend_nhom3/template/timViec.html";
+            window.location.href = "timViec.html";
         }
 
     });
