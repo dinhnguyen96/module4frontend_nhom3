@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0bd107af-7a48-499b-8a1e-92736ea45aa4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/template/loginRegistrationForm/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/loginRegistrationForm/setRole.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/trangChuCompany.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/trangChuUser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/.idea/login_registration_form.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/css/all.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/css/all.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/css/responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/images/apple-touch-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/images/apple-touch-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/images/bg_01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/images/bg_01.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/images/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/images/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/images/ps72B.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/images/ps72B.tmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/js/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/js/particles.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/js/particles.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/login (2)/all.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/login (2)/all.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/login (2)/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/login (2)/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/login (2)/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/login (2)/responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/login (2)/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/login (2)/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/login (3)/apple-touch-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/login (3)/apple-touch-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/login (3)/bg_01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/login (3)/bg_01.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/login (3)/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/login (3)/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/login (3)/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/login (3)/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/login (3)/ps72B.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/login (3)/ps72B.tmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/login (4)/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/login (4)/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/login (4)/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/login (4)/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/login (4)/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/login (4)/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/login (4)/particles.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/login (4)/particles.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/webfonts/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/login/fa-brands-400.eot" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/login/fa-brands-400.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/login/fa-brands-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/login/fa-brands-400.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/login/fa-brands-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/login/fa-brands-400.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/login/fa-brands-400.woff" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/login/fa-brands-400.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/login/fa-brands-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/login/fa-brands-400.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/login/fa-regular-400.eot" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/login/fa-regular-400.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/login/fa-regular-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/login/fa-regular-400.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/login/fa-regular-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/login/fa-regular-400.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/login/fa-regular-400.woff" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/login/fa-regular-400.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/login/fa-regular-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/login/fa-regular-400.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/login/fa-solid-900.eot" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/login/fa-solid-900.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/login/fa-solid-900.svg" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/login/fa-solid-900.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/login/fa-solid-900.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/login/fa-solid-900.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/login/fa-solid-900.woff" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/login/fa-solid-900.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/login/fa-solid-900.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/login/fa-solid-900.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/logout.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/logout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/webfonts/fa-brands-400.eot" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/webfonts/fa-brands-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/webfonts/fa-brands-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/webfonts/fa-brands-400.woff" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/webfonts/fa-brands-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/webfonts/fa-regular-400.eot" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/webfonts/fa-regular-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/webfonts/fa-regular-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/webfonts/fa-regular-400.woff" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/webfonts/fa-regular-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/webfonts/fa-solid-900.eot" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/webfonts/fa-solid-900.svg" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/webfonts/fa-solid-900.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/webfonts/fa-solid-900.woff" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login_registration_form/webfonts/fa-solid-900.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/trangChu.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/trangChu.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="tuan" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2OP04PxMaGO8nIzL5ar27N80rKP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/Desktop/module4frontend_nhome3/template/scss&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Desktop\module4frontend_nhome3\template\scss" />
+      <recent name="C:\Users\admin\Desktop\module4frontend_nhome3\template\login_registration_form" />
+      <recent name="C:\Users\admin\Desktop\module4frontend_nhome3\template" />
+      <recent name="C:\Users\admin\Desktop\module4frontend_nhome3\template\web" />
+      <recent name="C:\Users\admin\Desktop\module4frontend_nhome3\template\loginAcconut\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Desktop\module4frontend_nhome3\template\loginRegistrationForm" />
+      <recent name="C:\Users\admin\Desktop\module4frontend_nhome3\template\login_registration_form\webfonts" />
+      <recent name="C:\Users\admin\Desktop\module4frontend_nhome3\template" />
+      <recent name="C:\Users\admin\Desktop\module4frontend_nhome3\template\web" />
+      <recent name="C:\Users\admin\Desktop\module4frontend_nhome3\template\scss\bootstrap" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0bd107af-7a48-499b-8a1e-92736ea45aa4" name="Changes" comment="" />
+      <created>1681446717966</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681446717966</updated>
+      <workItem from="1681446719155" duration="221000" />
+      <workItem from="1681546199099" duration="18000" />
+      <workItem from="1681652008605" duration="4271000" />
+      <workItem from="1681656337784" duration="5474000" />
+      <workItem from="1681694373457" duration="51000" />
+      <workItem from="1681695587414" duration="3258000" />
+      <workItem from="1681699106859" duration="10078000" />
+      <workItem from="1681799815895" duration="14278000" />
+      <workItem from="1681834868440" duration="12348000" />
+      <workItem from="1681866693718" duration="652000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
