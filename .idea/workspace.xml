@@ -5,15 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f0ff868-fdca-4305-b55e-2dc74ea9c330" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/template/dangTin.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/dangTin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/duyetCongViec.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/duyetCongViec.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/js/getData/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/js/getData/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/lienHe.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/lienHe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/timViec.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/timViec.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/timViecUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/timViecUser.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/creatCompany/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/creatCompany/images/bg-head-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/creatCompany/images/bg-head-02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/creatCompany/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/creatCompany/js/cteatejob.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/creatCompany/js/global.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/creatCompany/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/creatCompany/vendor/datepicker/daterangepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/creatCompany/vendor/datepicker/daterangepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/creatCompany/vendor/datepicker/moment.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/creatCompany/vendor/font-awesome-4.7/HELP-US-OUT.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/creatCompany/vendor/font-awesome-4.7/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/creatCompany/vendor/font-awesome-4.7/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/creatCompany/vendor/font-awesome-4.7/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/creatCompany/vendor/font-awesome-4.7/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/creatCompany/vendor/font-awesome-4.7/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/creatCompany/vendor/font-awesome-4.7/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/creatCompany/vendor/font-awesome-4.7/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/creatCompany/vendor/font-awesome-4.7/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/creatCompany/vendor/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/creatCompany/vendor/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/creatCompany/vendor/mdi-font/css/material-design-iconic-font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/creatCompany/vendor/mdi-font/css/material-design-iconic-font.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/creatCompany/vendor/mdi-font/fonts/Material-Design-Iconic-Font.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/creatCompany/vendor/mdi-font/fonts/Material-Design-Iconic-Font.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/creatCompany/vendor/mdi-font/fonts/Material-Design-Iconic-Font.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/creatCompany/vendor/mdi-font/fonts/Material-Design-Iconic-Font.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/creatCompany/vendor/mdi-font/fonts/Material-Design-Iconic-Font.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/creatCompany/vendor/select2/select2.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/creatCompany/vendor/select2/select2.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template/trangChu.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/trangChu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/trangTin.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/trangTin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/ungVien.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/ungVien.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +47,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -43,17 +67,23 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2OP04PxMaGO8nIzL5ar27N80rKP" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/admin/Desktop/module4frontend_nhome3/template",
+    "last_opened_file_path": "D:/module4/case4/module4frontend_nhom3/template",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -64,11 +94,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\module4\case4\module4frontend_nhom3\template" />
       <recent name="C:\Users\admin\Desktop\module4frontend_nhome3\template" />
       <recent name="C:\Users\admin\Desktop\module4frontend_nhome3\template\scss" />
       <recent name="C:\Users\admin\Desktop\module4frontend_nhome3\template\login_registration_form" />
       <recent name="C:\Users\admin\Desktop\module4frontend_nhome3\template\web" />
-      <recent name="C:\Users\admin\Desktop\module4frontend_nhome3\template\loginAcconut\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\admin\Desktop\module4frontend_nhome3\template\loginRegistrationForm" />
@@ -81,7 +111,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0bd107af-7a48-499b-8a1e-92736ea45aa4" name="Changes" comment="" />
+      <changelist id="5f0ff868-fdca-4305-b55e-2dc74ea9c330" name="Changes" comment="" />
       <created>1681446717966</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -96,6 +126,7 @@
       <workItem from="1681799815895" duration="14278000" />
       <workItem from="1681834868440" duration="12348000" />
       <workItem from="1681866693718" duration="1091000" />
+      <workItem from="1681892787436" duration="9310000" />
     </task>
     <servers />
   </component>
