@@ -60,7 +60,7 @@ function signup() {
         url: "http://localhost:8080/api/signup",
         success: function (data) {
             alert("Create user successfully!");
-            window.location.href = "../trangChu.html";
+            window.location.href = "../../../module4frontend_nhome3/template/loginRegistrationForm/index.html";
         }
     })
 }

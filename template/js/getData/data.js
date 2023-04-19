@@ -89,6 +89,97 @@ function getAllData()
         console.log('At least one request failed');
     });
 }
+function getAllDataUser()
+{
+    const requests = [];
+    let firstRequest = $.ajax
+    ({
+
+        type: "GET",
+        //tên API
+        url: "http://localhost:8080/all/homes/cityCount",
+        success: function (data)
+        {
+            if (data !== undefined)
+            {
+                $('#section-counter, .hero-wrap, .ftco-counter, .ftco-volunteer').waypoint( function( direction )
+                {
+
+                    if (direction === 'down' && !$(this.element).hasClass('ftco-animated'))
+                    {
+
+                        let comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
+                        $('#locationNumber').each(function ()
+                        {
+                            let $this = $(this);
+                            $this.animateNumber(
+                                {
+                                    number: data,
+                                    numberStep: comma_separator_number_step
+                                }, 1000
+                            );
+                        });
+
+                    }
+                } , { offset: '95%' } );
+            }
+        }
+    });
+    let secondRequest = $.ajax({
+
+        type: "GET",
+        //tên API
+        url: "http://localhost:8080/all/homes/companyCount",
+        success: function (data) {
+            if (data !== undefined) {
+                $('#section-counter, .hero-wrap, .ftco-counter, .ftco-volunteer').waypoint(function (direction) {
+
+                    if (direction === 'down' && !$(this.element).hasClass('ftco-animated')) {
+
+                        let comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
+                        $('#companyNumber').each(function () {
+                            let $this = $(this);
+                            $this.animateNumber(
+                                {
+                                    number: data,
+                                    numberStep: comma_separator_number_step
+                                }, 1000
+                            );
+                        });
+
+                    }
+                }, {offset: '95%'});
+            }
+        }
+    });
+    let thirdRequest = $.ajax({
+
+        type: "GET",
+        //tên API
+        url: "http://localhost:8080/all/homes/programmingLanguage",
+        success: function (data) {
+            let content = "";
+            if (data !== undefined) {
+                for (let i = 0; i < data.length;i++)
+                {
+                    content += getProgrammingLanguage(data[i])
+                }
+            }
+            document.getElementById("programmingLanguageJob").innerHTML = content;
+            document.getElementById("programmingLanguageCandidate").innerHTML = content;
+        }
+    });
+    getAllListCompanyPage(0);
+    requests.push(firstRequest);
+    requests.push(secondRequest);
+    requests.push(thirdRequest);
+    $.when.apply($, requests).done(function()
+    {
+        console.log('All requests complete');
+    }).fail(function() {
+        console.log('At least one request failed');
+    });
+}
 
 function searchJob() {
     let qualificationName = $('#qualifcationNameByJob').val();
@@ -250,7 +341,7 @@ function getProgrammingLanguage(data)
 function getCompanies(data)
 {
     return `<li><img src='/template/images/company/${data.avatar}' width="150" height="150" >
- <br><button onclick="detailCompany(${data.id})" class="btn-info">${data.name}</button><br>
+ <br><button onclick="detailCompany1(${data.id})" class="btn-info">${data.name}</button><br>
  </li>`;
 }
 

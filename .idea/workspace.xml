@@ -5,15 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f0ff868-fdca-4305-b55e-2dc74ea9c330" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/template/dangTin.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/dangTin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/duyetCongViec.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/duyetCongViec.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/detailcompany/thongTinCompany.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/detailcompany/thongTinUser.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/js/getData/detailUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/js/son.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/detailcompany/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/detailcompany/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template/js/getData/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/js/getData/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/lienHe.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/lienHe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/timViec.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/timViec.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/timViecUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/timViecUser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/trangChu.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/trangChu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/trangTin.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/trangTin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/ungVien.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/ungVien.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/js/getData/detailCompany.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/js/getData/detailCompany.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/loginRegistrationForm/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/loginRegistrationForm/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/trangChuCompany.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/trangChuCompany.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/trangChuUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/trangChuUser.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +56,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/admin/Desktop/module4frontend_nhome3/template",
+    "last_opened_file_path": "C:/Users/admin/Desktop/module4frontend_nhome3/template/detailcompany",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -64,11 +67,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Desktop\module4frontend_nhome3\template\detailcompany" />
       <recent name="C:\Users\admin\Desktop\module4frontend_nhome3\template" />
       <recent name="C:\Users\admin\Desktop\module4frontend_nhome3\template\scss" />
       <recent name="C:\Users\admin\Desktop\module4frontend_nhome3\template\login_registration_form" />
       <recent name="C:\Users\admin\Desktop\module4frontend_nhome3\template\web" />
-      <recent name="C:\Users\admin\Desktop\module4frontend_nhome3\template\loginAcconut\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\admin\Desktop\module4frontend_nhome3\template\loginRegistrationForm" />
