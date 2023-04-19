@@ -219,7 +219,9 @@ function getProgrammingLanguage(data)
 }
 function getCompanies(data)
 {
-    return `<li><img src='/template/images/company/${data.avatar}' width="150" height="150" > <br>${data.name}<br></li>`;
+    return `<li><img src='/template/images/company/${data.avatar}' width="150" height="150" >
+ <br><button onclick="detailCompany(${data.id})" class="btn-info">${data.name}</button><br>
+ </li>`;
 }
 
 function getAllListCompanyPage(page)
