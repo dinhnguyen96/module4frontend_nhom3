@@ -6,7 +6,7 @@ function getAllData()
 
         type: "GET",
         //tên API
-        url: "http://localhost:8080/homes/cityCount",
+        url: "http://localhost:8080/all/homes/cityCount",
         success: function (data)
         {
             if (data !== undefined)
@@ -38,7 +38,7 @@ function getAllData()
 
         type: "GET",
         //tên API
-        url: "http://localhost:8080/homes/companyCount",
+        url: "http://localhost:8080/all/homes/companyCount",
         success: function (data) {
             if (data !== undefined) {
                 $('#section-counter, .hero-wrap, .ftco-counter, .ftco-volunteer').waypoint(function (direction) {
@@ -65,7 +65,7 @@ function getAllData()
 
         type: "GET",
         //tên API
-        url: "http://localhost:8080/homes/programmingLanguage",
+        url: "http://localhost:8080/all/homes/programmingLanguage",
         success: function (data) {
             let content = "";
             if (data !== undefined) {
@@ -103,7 +103,7 @@ function searchJob()
         },
         type: "GET",
         //tên API
-        url: `http://localhost:8080/homes/jobs/searchingJob?page=0&qualificationName=${qualificationName}&programmingLanguageJob=${programmingLanguageJob}&searchLocationByJob=${locationJob}`,
+        url: `http://localhost:8080/all/homes/searchingJob?page=0&qualificationName=${qualificationName}&programmingLanguageJob=${programmingLanguageJob}&searchLocationByJob=${locationJob}`,
 
         //xử lý khi thành công
         success: function ()
@@ -126,7 +126,7 @@ function getAllDataSearch()
 
         type: "GET",
         //tên API
-        url: "http://localhost:8080/homes/cityCount",
+        url: "http://localhost:8080/all/homes/cityCount",
         success: function (data)
         {
             if (data !== undefined)
@@ -158,7 +158,7 @@ function getAllDataSearch()
 
         type: "GET",
         //tên API
-        url: "http://localhost:8080/homes/companyCount",
+        url: "http://localhost:8080/all/homes/companyCount",
         success: function (data) {
             if (data !== undefined) {
                 $('#section-counter, .hero-wrap, .ftco-counter, .ftco-volunteer').waypoint(function (direction) {
@@ -184,7 +184,7 @@ function getAllDataSearch()
     let thirdRequest = $.ajax({
         type: "GET",
         //tên API
-        url: "http://localhost:8080/homes/programmingLanguage",
+        url: "http://localhost:8080/all/homes/programmingLanguage",
         success: function (data) {
             let content = "";
             if (data !== undefined) {
@@ -226,7 +226,7 @@ function getAllListCompanyPage(page)
 {
     $.ajax({
         type: "GET",
-        url: `http://localhost:8080/homes/companies?page=${page}`,
+        url: `http://localhost:8080/all/homes/companies?page=${page}`,
         success: function (data) {
             displayCompany(data.content)
             displayPageCompany(data)
@@ -261,7 +261,7 @@ function getAllListJobPage(page)
     let locationJob = localStorage.getItem("searchLocationByJob");
     $.ajax({
         type: "GET",
-    url: `http://localhost:8080/homes/jobs/searchingJob?page=${page}&qualificationName=${qualificationName}&programmingLanguageJob=${programmingLanguageJob}&searchLocationByJob=${locationJob}`,
+    url: `http://localhost:8080/all/homes/searchingJob?page=${page}&qualificationName=${qualificationName}&programmingLanguageJob=${programmingLanguageJob}&searchLocationByJob=${locationJob}`,
         success: function (data) {
             displayJob(data.content)
             displayPage(data)
@@ -287,7 +287,7 @@ function displayJob(data)
                        <div class="job-post-item p-4 d-block d-lg-flex align-items-center">
                            <div class="one-third mb-4 mb-md-0">
                                 <div class="job-post-item-header align-items-center">
-                                 <span class="subadge">${data[i].name}</span>
+                                <a href="#"> <span class="subadge">${data[i].name}</span></a>
                                 </div>
                                   <div class="job-post-item-body d-block d-md-flex">
                                      <div class="mr-3"><span class="icon-layers"></span> <a href="#"></a></div>
@@ -299,7 +299,7 @@ function displayJob(data)
                                    <a href="#" class="icon text-center d-flex justify-content-center align-items-center icon mr-2">
                                     <span class="icon-heart"></span></a>
                                 </div>
-                                <a href="job-single.html" class="btn btn-primary py-2">Đăng Kí</a>
+                                <a href="job-single.html" class="btn btn-primary py-2">Apply Job</a>
                            </div>
                        </div>
                     </div>`
