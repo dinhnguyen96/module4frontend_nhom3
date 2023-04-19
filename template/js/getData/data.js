@@ -283,15 +283,28 @@ function displayJob(data)
 
     for (let i = 0; i < data.length;i++)
     {
-        content += `<div class="job-post-item-header align-items-center">
-                       <span class="subadge">${data[i].name}</span>
-                   </div>
-                   <div class="job-post-item-body d-block d-md-flex">
-                     <div class="mr-3"><span class="icon-layers"></span> <a href="#"></a></div>
-                   <div><span class="icon-my_location"></span> <span>Địa chỉ</span></div>
-                   </div>`
+        content += `<div class="col-md-12 ftco-animate fadeInUp ftco-animated">
+                       <div class="job-post-item p-4 d-block d-lg-flex align-items-center">
+                           <div class="one-third mb-4 mb-md-0">
+                                <div class="job-post-item-header align-items-center">
+                                 <span class="subadge">${data[i].name}</span>
+                                </div>
+                                  <div class="job-post-item-body d-block d-md-flex">
+                                     <div class="mr-3"><span class="icon-layers"></span> <a href="#"></a></div>
+                                       <div><span class="icon-my_location"></span> <span>Địa chỉ</span></div>
+                                  </div>
+                           </div>
+                           <div class="one-forth ml-auto d-flex align-items-center mt-4 md-md-0">
+                                 <div>
+                                   <a href="#" class="icon text-center d-flex justify-content-center align-items-center icon mr-2">
+                                    <span class="icon-heart"></span></a>
+                                </div>
+                                <a href="job-single.html" class="btn btn-primary py-2">Đăng Kí</a>
+                           </div>
+                       </div>
+                    </div>`
     }
-    document.getElementById("resultSearch").innerHTML = content;
+    document.getElementById("result").innerHTML = content;
 }
 function displayPage(data){
     let content = `<button class="btn btn-primary" id="backup" onclick="isPrevious(${data.pageable.pageNumber})">Previous</button>
