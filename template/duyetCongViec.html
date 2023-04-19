@@ -31,7 +31,7 @@
 	  <script src="js/getData/data.js"></script>
 	  <script src="js/getData/detailCompany.js"></script>
   </head>
-  <body>
+  <body onload="getAllListJobBrowser()">
 
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	  <div class="container-fluid px-md-4	">
@@ -70,58 +70,17 @@
     </div>
 
 		<section class="ftco-section bg-light">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-9 pr-lg-4">
+			  <div class="container">
+				  <div class="row" id="result">
+				  </div>
+				  <!--							hết vòng lặp-->
+				  <div class="row mt-5">
+					  <div class="col text-center">
+						  <div class="block-27" id="page">
 
-
-
-<!--						vòng lặp in code ở đây-->
-						<div class="row">
-							<div class="col-md-12 ftco-animate">
-		            <div class="job-post-item p-4 d-block d-lg-flex align-items-center">
-		              <div class="one-third mb-4 mb-md-0">
-		                <div class="job-post-item-header align-items-center">
-		                	<span class="subadge">Partime</span>
-		                  <h2 class="mr-3 text-black"><a href="#">Frontend Development</a></h2>
-		                </div>
-		                <div class="job-post-item-body d-block d-md-flex">
-		                  <div class="mr-3"><span class="icon-layers"></span> <a href="#">Facebook, Inc.</a></div>
-		                  <div><span class="icon-my_location"></span> <span>Western City, UK</span></div>
-		                </div>
-		              </div>
-
-		              <div class="one-forth ml-auto d-flex align-items-center mt-4 md-md-0">
-		              	<div>
-			                <a href="#" class="icon text-center d-flex justify-content-center align-items-center icon mr-2">
-			                	<span class="icon-heart"></span>
-			                </a>
-		                </div>
-		                <a href="job-single.html" class="btn btn-primary py-2">Apply job</a>
-		              </div>
-		            </div>
-		          </div><!-- end -->
-		        </div>
-
-
-<!--						hết vòng lặp-->
-
-
-		        <div class="row mt-5">
-		          <div class="col text-center">
-		            <div class="block-27">
-		              <ul>
-		                <li><a href="#">&lt;</a></li>
-		                <li class="active"><span>1</span></li>
-		                <li><a href="#">2</a></li>
-		                <li><a href="#">3</a></li>
-		                <li><a href="#">4</a></li>
-		                <li><a href="#">5</a></li>
-		                <li><a href="#">&gt;</a></li>
-		              </ul>
-		            </div>
-		          </div>
-		        </div>
+						  </div>
+					  </div>
+				  </div>
 		      </div>
 		      <div class="col-lg-3 sidebar">
 		        <div class="sidebar-box bg-white p-4 ftco-animate">
@@ -284,6 +243,7 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
-    
+  <script src="js/getData/data.js"></script>
+
   </body>
 </html>
