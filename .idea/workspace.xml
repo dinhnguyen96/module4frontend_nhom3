@@ -5,18 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f0ff868-fdca-4305-b55e-2dc74ea9c330" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/template/detailcompany/thongTinCompany.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/detailcompany/thongTinUser.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/js/getData/detailUser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/js/son.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/dangTin.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/dangTin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/dangTinCompany.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/dangTinCompany.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/dangTinUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/dangTinUser.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template/detailcompany/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/detailcompany/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/duyetCongViec.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/duyetCongViec.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/duyetCongViecUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/duyetCongViecUser.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template/js/getData/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/js/getData/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/js/getData/detailCompany.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/js/getData/detailCompany.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/loginRegistrationForm/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/loginRegistrationForm/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/loginRegistrationForm/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/timViec.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/timViec.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/timViecUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/timViecUser.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template/trangChuCompany.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/trangChuCompany.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template/trangChuUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/trangChuUser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/ungVienCompany.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/ungVienCompany.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,21 +51,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/admin/Desktop/module4frontend_nhome3/template/detailcompany",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/Desktop/module4frontend_nhome3/template/detailcompany&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\admin\Desktop\module4frontend_nhome3\template\detailcompany" />
@@ -84,7 +85,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0bd107af-7a48-499b-8a1e-92736ea45aa4" name="Changes" comment="" />
+      <changelist id="5f0ff868-fdca-4305-b55e-2dc74ea9c330" name="Changes" comment="" />
       <created>1681446717966</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -99,6 +100,7 @@
       <workItem from="1681799815895" duration="14278000" />
       <workItem from="1681834868440" duration="12348000" />
       <workItem from="1681866693718" duration="1091000" />
+      <workItem from="1681904676846" duration="3724000" />
     </task>
     <servers />
   </component>
