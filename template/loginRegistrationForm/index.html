@@ -28,7 +28,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
 
-    <!--[if lt IE 9]>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="login.js"></script>
+	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
@@ -48,7 +50,7 @@
 						<div class="panel-heading">
 							<div class="row">
 								<div class="col-lg-6 col-sm-6 col-xl-6">
-									<a href="#" class="active" id="login-form-link">Login</a>
+									<a href="#" class="active" id="login-form-link">Đăng nhập</a>
 								</div>
 								<div class="col-lg-6 col-sm-6 col-xl-6">
 									<a href="#" id="register-form-link">Register</a>
@@ -62,7 +64,7 @@
 									<form id="login-form" action="#" method="post" role="form" style="display: block;">
 										<div class="form-group">
 											<label class="icon-lp"><i class="fas fa-user-tie"></i></label>
-											<input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="" required="">
+											<input type="text" name="gmail" id="gmail" tabindex="1" class="form-control" placeholder="Gmail" value="" required="">
 										</div>
 										<div class="form-group">
 											<label class="icon-lp"><i class="fas fa-key"></i></label>
@@ -85,7 +87,7 @@
 										<div class="form-group">
 											<div class="row">
 												<div class="col-sm-6 offset-sm-3">
-													<input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Log In">
+													<input type="submit" onclick="loginGmail()" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Log In">
 												</div>
 											</div>
 										</div>
@@ -100,17 +102,17 @@
 										</div>
 									</form>
 									<form id="register-form" action="#" method="post" role="form" style="display: none;">
-										<div class="form-group">
-											<label class="icon-lp"><i class="fas fa-user-tie"></i></label>
-											<input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="" required="">
-										</div>
+<!--										<div class="form-group">-->
+<!--											<label class="icon-lp"><i class="fas fa-user-tie"></i></label>-->
+<!--											<input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="" required="">-->
+<!--										</div>-->
 										<div class="form-group">
 											<label class="icon-lp"><i class="fas fa-envelope"></i></label>
 											<input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="" required="">
 										</div>
 										<div class="form-group">
 											<label class="icon-lp"><i class="fas fa-key"></i></label>
-											<input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password" required="">
+											<input type="password" name="password" id="pass" tabindex="2" class="form-control" placeholder="Password" required="">
 										</div>
 										<div class="form-group">
 											<label class="icon-lp"><i class="fas fa-key"></i></label>
@@ -124,36 +126,35 @@
 												<button class="tw"><i class="fab fa-twitter"></i> Connect with Twitter</button>
 											</li>
 										</ul>
-										
-										<div class="che-box">
-											<label class="checkbox-in"> 
-												<input name="checkbox" type="checkbox"> <span></span>I agree to the <a href="#"> Terms and Conditions </a> and <a href="#">Privacy Policy </a>
-											</label>
+
+										<div>
+											<select id="roles">
+												<option value="USER">USER</option>
+												<option value="ROLE_COMPANY">COMPANY</option>
+											</select>
 										</div>
-										
+
 										<div class="form-group">
 											<div class="row">
 												<div class="col-sm-6 offset-sm-3">
-													<input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Register Now">
+													<input type="submit" name="register-submit" onclick="signup()" id="register-submit" tabindex="4" class="form-control btn btn-register">
+<!--												<button onclick="signup()">signup</button>-->
 												</div>
 											</div>
-										</div>										
+										</div>
 									</form>
 								</div>
 							</div>
 						</div>
 					</div>
-					
-					<p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">Login Register</a> Design By : <a href="https://html.design/">html design</a></p>
-					
+
 				</div>
 			</div>
-		</div>	
+		</div>
 	</div>
-	
-</div>
 
-	
+</div>
+<script src="login.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/particles.min.js"></script>
@@ -175,13 +176,13 @@
 				e.preventDefault();
 			});
 		});
-		
+
 		$('.form-group input').focus(function () {
 			$(this).parent().addClass('addcolor');
 		}).blur(function () {
 			$(this).parent().removeClass('addcolor');
 		});
-		
+
 	</script>
 </body>
 </html>

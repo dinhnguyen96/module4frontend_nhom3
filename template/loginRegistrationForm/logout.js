@@ -4,7 +4,7 @@ function logout() {
         type: "GET",
         success: function (response) {
             localStorage.removeItem("object");
-            window.location.href = "/index.html";
+            window.location.href = "../../../module4frontend_nhome3/template/loginRegistrationForm/index.html";
         },
         error: function (error) {
             console.log(error);
