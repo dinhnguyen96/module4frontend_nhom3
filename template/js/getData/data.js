@@ -360,7 +360,7 @@ function getAllDataSearch()
     requests.push(secondRequest);
     requests.push(thirdRequest);
     requests.push(fourthRequest);
-    requests.push(firstRequest);
+    requests.push(fifthRequest);
     $.when.apply($, requests).done(function()
     {
         console.log('All requests complete');
