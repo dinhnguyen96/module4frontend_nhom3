@@ -89,8 +89,8 @@ function getAllData()
         console.log('At least one request failed');
     });
 }
-function searchJob()
-{
+
+function searchJob() {
     let qualificationName = $('#qualifcationNameByJob').val();
     let programmingLanguageJob = BigInt($('#programmingLanguageJob').val());
     let locationJob = $('#locationByJob').val();
@@ -106,8 +106,7 @@ function searchJob()
         url: `http://localhost:8080/all/homes/searchingJob?page=0&qualificationName=${qualificationName}&programmingLanguageJob=${programmingLanguageJob}&searchLocationByJob=${locationJob}`,
 
         //xử lý khi thành công
-        success: function ()
-        {
+        success: function () {
             localStorage.setItem("qualificationName", qualificationName);
             localStorage.setItem("programmingLanguageJob", programmingLanguageJob.toString());
             localStorage.setItem("searchLocationByJob", locationJob)
@@ -118,6 +117,37 @@ function searchJob()
     //chặn sự kiện mặc định của thẻ
     event.preventDefault();
 }
+
+//search của riêng thg user
+function searchJobUser() {
+    let qualificationName = $('#qualifcationNameByJob').val();
+    let programmingLanguageJob = BigInt($('#programmingLanguageJob').val());
+    let locationJob = $('#locationByJob').val();
+
+    // goi ajax
+    $.ajax({
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        type: "GET",
+        //tên API
+        url: `http://localhost:8080/api/user/searchingJobUser?page=0&qualificationName=${qualificationName}&programmingLanguageJob=${programmingLanguageJob}&searchLocationByJob=${locationJob}`,
+
+        //xử lý khi thành công
+        success: function () {
+            localStorage.setItem("qualificationName", qualificationName);
+            localStorage.setItem("programmingLanguageJob", programmingLanguageJob.toString());
+            localStorage.setItem("searchLocationByJob", locationJob)
+            window.location.href = "timViecUser.html";
+        }
+
+    });
+    //chặn sự kiện mặc định của thẻ
+    event.preventDefault();
+}
+
+//tren la thg search user
 function getAllDataSearch()
 {
     const requests = [];
